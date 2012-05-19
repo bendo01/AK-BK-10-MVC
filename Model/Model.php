@@ -66,15 +66,8 @@ class Model{
 			$results = $sth->fetchAll(PDO::FETCH_OBJ);
 			$i=0;
 			$dataFields = array();
-			//echo '<pre>';
-			//print_r($results);
-			//echo '</pre>';
 		
 			for($i=0;$i<count($results);$i++){
-				//echo '<pre>';
-				//print_r($results[$i]->Field);
-				//echo '<pre>';
-				//echo ($result->field).'<br />';
 				array_push($dataFields,$results[$i]->Field);
 			}
 		
