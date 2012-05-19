@@ -1,6 +1,6 @@
 <?php
 	include('Model/Model.php');
-	$myModel = new Model('root','talaso','mysql','localhost','xxx_ak_10');
+	$myModel = new Model('root','','mysql','localhost','xxx_ak_10');
 	$table = 'blogs';
 	$selectedViewFields = array(
 		'title',
