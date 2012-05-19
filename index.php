@@ -1,10 +1,6 @@
 <?php
 	include('Model/Model.php');
 	$myModel = new Model('root','talaso','mysql','localhost','xxx_ak_10');
-	//$results = $myModel->selectData('blogs');
-	//echo '<pre>';
-	//print_r ($results);
-	//echo '</pre>';
 	$table = 'blogs';
 	$selectedViewFields = array(
 		'title',
@@ -39,27 +35,6 @@
 		'start' => 1,
 		'end' => 30
 	);
-	//$myModel->arraySQLConditionsToString($findFields);
-	
-	/*
-	echo '<pre>';
-	
-	print_r($table);
-	echo '<br />';
-	print_r($selectedViewFields);
-	echo '<br />';
-	print_r($findFields);
-	echo '<br />';
-	print_r($orderBy);
-	echo '<br />';
-	print_r($direction);
-	echo '</pre>';
-	
-	echo $myModel->myArrayToString($selectedViewFields);
-	echo '<br />';
-	echo $myModel->myArrayToString($orderBy);
-	//$resultData = $myModel->findData($table);
-	*/
 	$resultData = $myModel->findData(
 		$table,
 		$selectedViewFields,
